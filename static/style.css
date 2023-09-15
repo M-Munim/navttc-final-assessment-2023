@@ -1,0 +1,105 @@
+  /* Base Styles */
+  body {
+      font-family: Arial, sans-serif;
+      background-color: bisque;
+  }
+
+  .container {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 0.5s ease;
+  }
+
+  /* Header Styles */
+  .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 20px auto;
+  }
+
+  .head h2 {
+      font-size: 24px;
+      color: #333;
+  }
+
+  .head img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+  }
+
+  .head img:hover {
+      transform: scale(1.1);
+  }
+
+  /* Form Styles */
+  h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+  }
+
+  .form-group {
+      margin-bottom: 20px;
+  }
+
+  label {
+      display: block;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 5px;
+  }
+
+  input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none;
+  }
+
+  #generateButton {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  #generateButton:hover {
+      background-color: #0056b3;
+  }
+
+  /* Output Styles */
+  #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+      opacity: 0;
+      /* Initially hidden */
+      transition: opacity 0.5s ease;
+  }
+
+  /* Keyframes for Animation */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
